@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <Title>Sorting</Title>
+    <body>
+        <h2>"example (unwanted thing) example"</h2>
+      
+        
+        <p id="demo">"example (unwanted thing) example"</p>
+                  
+        <button onclick="removeParentheses()">Klik</button>
+    <script>
+        function removeParentheses(){
+        var str = document.getElementById("demo").innerHTML;
+        
+       
+         var s = str.replace(/ \([\s\S]*?\)/g, "");
+        document.getElementById("demo").innerHTML = s ;
+        }
+</script>
+
+    </body>
+</head>
+</html>
