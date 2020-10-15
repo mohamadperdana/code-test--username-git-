@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <head>
-    <Title>Sorting</Title>
+    <Title>Sum Array</Title>
     <body>
-        <h2>"example (unwanted thing) example"</h2>
+       
       
         
-        <p id="demo">"example (unwanted thing) example"</p>
+        <p id="demo"></p>
                   
-        <button onclick="removeParentheses()">Klik</button>
+        <button onclick="sumArray()">Tambah</button>
     <script>
-        function removeParentheses(){
-        var str = document.getElementById("demo").innerHTML;
-        
-       
-         var s = str.replace(/ \([\s\S]*?\)/g, "");
-        document.getElementById("demo").innerHTML = s ;
+        function sumArray(){
+        var array1 = [3,2,9]
+        var array2 = [1,2]
+         var jumlahArray = array1.concat(array2)
+        document.getElementById("demo").innerHTML = jumlahArray ;
         }
 </script>
 
